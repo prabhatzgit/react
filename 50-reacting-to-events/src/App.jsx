@@ -4,11 +4,7 @@ import CoreConcept from "./components/CoreConcept";
 import TabButton from "./components/TabButton";
 
 function App() {
-  // passing custom arguments to event function
-  function handleSelect(selectedButton) {
-    // selectedButton => 'components', 'jsx', 'props', 'state'
-    console.log(selectedButton);
-  }
+  function handleSelect(selectedButton) {}
   return (
     <div>
       <Header />
@@ -37,9 +33,6 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            {/* Using children: Components can wrap other components or other content is called component composition */}
-            {/* <TabButton>Components</TabButton> */}
-            {/* Using label */}
             <TabButton onSelect={() => handleSelect("components")}>
               Components
             </TabButton>
