@@ -1,4 +1,5 @@
 export default function TabButton({ children, onClick }) {
+  // Advantage of defining thse event handler function inside component function is that thet have access to the component's f props and state
   function handleClick() {
     console.log("clicked");
   }
